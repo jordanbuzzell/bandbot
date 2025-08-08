@@ -1,0 +1,177 @@
+[
+  {
+    "name": "The Bowery Ballroom",
+    "neighborhood": "Lower East Side",
+    "capacity": "575 standing",
+    "genres": "Indie rock, alternative, folk",
+    "description": "Historic venue with excellent acoustics and intimate atmosphere. Known for hosting breakthrough indie acts and established artists alike."
+  },
+  {
+    "name": "Mercury Lounge",
+    "neighborhood": "Lower East Side", 
+    "capacity": "250 standing",
+    "genres": "Indie rock, punk, alternative",
+    "description": "Legendary small venue that launched many careers. Perfect for emerging bands looking to build their following."
+  },
+  {
+    "name": "Brooklyn Bowl",
+    "neighborhood": "Williamsburg",
+    "capacity": "600 standing",
+    "genres": "Rock, funk, jam bands, electronic",
+    "description": "Unique venue combining live music with bowling. Great sound system and fun atmosphere for energetic performances."
+  },
+  {
+    "name": "Music Hall of Williamsburg",
+    "neighborhood": "Williamsburg",
+    "capacity": "550 standing",
+    "genres": "Indie rock, electronic, hip-hop",
+    "description": "Modern venue with state-of-the-art sound and lighting. Popular with both emerging and established indie artists."
+  },
+  {
+    "name": "The Knitting Factory",
+    "neighborhood": "Williamsburg",
+    "capacity": "300 standing",
+    "genres": "Experimental, jazz, punk, indie",
+    "description": "Eclectic venue known for supporting experimental and avant-garde music. Great for artists pushing boundaries."
+  },
+  {
+    "name": "Rough Trade NYC",
+    "neighborhood": "Williamsburg",
+    "capacity": "300 standing",
+    "genres": "Indie rock, punk, electronic",
+    "description": "Record store and venue combo. Perfect for indie bands with a strong fanbase who appreciate vinyl culture."
+  },
+  {
+    "name": "Baby's All Right",
+    "neighborhood": "Williamsburg",
+    "capacity": "300 standing",
+    "genres": "Indie rock, folk, electronic",
+    "description": "Intimate venue with great sightlines and sound. Known for discovering new talent and hosting industry showcases."
+  },
+  {
+    "name": "The Sultan Room",
+    "neighborhood": "Bushwick",
+    "capacity": "200 standing",
+    "genres": "World music, jazz, experimental",
+    "description": "Beautifully decorated venue specializing in world music and jazz. Perfect for acoustic acts and cultural fusion."
+  },
+  {
+    "name": "Elsewhere",
+    "neighborhood": "Bushwick",
+    "capacity": "600 standing (Hall), 200 (Zone One)",
+    "genres": "Electronic, indie rock, experimental",
+    "description": "Multi-room venue with different spaces for different vibes. Great for electronic acts and experimental music."
+  },
+  {
+    "name": "House of Yes",
+    "neighborhood": "Bushwick",
+    "capacity": "400 standing",
+    "genres": "Electronic, performance art, experimental",
+    "description": "Immersive performance space known for theatrical shows and electronic music. Perfect for artists who incorporate visual elements."
+  },
+  {
+    "name": "The Bell House",
+    "neighborhood": "Gowanus",
+    "capacity": "400 standing",
+    "genres": "Indie rock, folk, comedy",
+    "description": "Versatile venue in a converted warehouse. Great acoustics and flexible space for various performance styles."
+  },
+  {
+    "name": "Union Pool",
+    "neighborhood": "Williamsburg",
+    "capacity": "200 standing",
+    "genres": "Indie rock, folk, punk",
+    "description": "Outdoor venue with a relaxed backyard vibe. Perfect for summer shows and bands with a laid-back aesthetic."
+  },
+  {
+    "name": "Pianos",
+    "neighborhood": "Lower East Side",
+    "capacity": "150 standing",
+    "genres": "Rock, punk, indie",
+    "description": "Intimate venue with two performance spaces. Great for new bands looking to cut their teeth in the NYC scene."
+  },
+  {
+    "name": "Arlene's Grocery",
+    "neighborhood": "Lower East Side",
+    "capacity": "200 standing",
+    "genres": "Rock, punk, metal",
+    "description": "Gritty rock venue with a no-frills attitude. Perfect for punk and metal bands who want an authentic NYC experience."
+  },
+  {
+    "name": "The Bitter End",
+    "neighborhood": "Greenwich Village",
+    "capacity": "230 seated",
+    "genres": "Folk, singer-songwriter, acoustic",
+    "description": "Historic folk venue where Bob Dylan and many others got their start. Perfect for acoustic acts and singer-songwriters."
+  },
+  {
+    "name": "Joe's Pub",
+    "neighborhood": "East Village",
+    "capacity": "160 seated",
+    "genres": "Cabaret, jazz, indie folk",
+    "description": "Upscale venue with dinner service. Great for sophisticated acts and artists who want a more refined atmosphere."
+  },
+  {
+    "name": "The Stone",
+    "neighborhood": "East Village",
+    "capacity": "70 seated",
+    "genres": "Experimental, avant-garde, jazz",
+    "description": "Tiny venue dedicated to experimental music. Perfect for avant-garde artists and intimate acoustic performances."
+  },
+  {
+    "name": "Rockwood Music Hall",
+    "neighborhood": "Lower East Side",
+    "capacity": "80-300 depending on stage",
+    "genres": "Singer-songwriter, indie folk, acoustic",
+    "description": "Multi-stage venue perfect for emerging singer-songwriters. Great place to build a following in an intimate setting."
+  },
+  {
+    "name": "The Delancey",
+    "neighborhood": "Lower East Side",
+    "capacity": "200 standing",
+    "genres": "Indie rock, electronic, hip-hop",
+    "description": "Multi-level venue with rooftop space. Great for bands who want variety in their performance space."
+  },
+  {
+    "name": "Alphaville",
+    "neighborhood": "Bushwick",
+    "capacity": "150 standing",
+    "genres": "Indie rock, punk, experimental",
+    "description": "DIY venue with a community focus. Perfect for emerging bands who want to connect with the underground scene."
+  },
+  {
+    "name": "Trans-Pecos",
+    "neighborhood": "Ridgewood",
+    "capacity": "200 standing",
+    "genres": "Electronic, experimental, noise",
+    "description": "Experimental venue known for pushing boundaries. Great for electronic acts and experimental musicians."
+  },
+  {
+    "name": "The Gutter",
+    "neighborhood": "Williamsburg",
+    "capacity": "100 standing",
+    "genres": "Punk, metal, hardcore",
+    "description": "Small punk venue with bowling lanes. Perfect for hardcore and punk bands who want an authentic underground experience."
+  },
+  {
+    "name": "Nowadays",
+    "neighborhood": "Ridgewood",
+    "capacity": "300 standing",
+    "genres": "Electronic, house, techno",
+    "description": "Outdoor electronic music venue. Perfect for DJs and electronic acts, especially during summer months."
+  },
+  {
+    "name": "C'mon Everybody",
+    "neighborhood": "Bed-Stuy",
+    "capacity": "200 standing",
+    "genres": "Indie rock, punk, electronic",
+    "description": "Neighborhood venue with a strong community vibe. Great for bands looking to connect with local Brooklyn audiences."
+  },
+  {
+    "name": "Sunnyvale",
+    "neighborhood": "Bed-Stuy",
+    "capacity": "150 standing",
+    "genres": "Indie rock, folk, experimental",
+    "description": "Cozy venue with a backyard space. Perfect for indie bands who want an intimate, community-focused show."
+  }
+]
