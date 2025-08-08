@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BandBot - Your Music Career Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">🎸 BandBot</h1>
+            <p class="text-xl text-gray-600">Your AI assistant for naming your band and finding NYC venues</p>
+        </header>
+
+        <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <!-- Band Name Generator -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">🎵 Generate Band Names</h2>
+                <p class="text-gray-600 mb-6">Describe your music style and we'll suggest creative band names for you!</p>
+                
+                <form hx-post="/band-name/htmx" hx-target="#band-results" hx-indicator="#band-loading" class="space-y-4">
+                    <div>
+                        <label for="band-description" class="block text-sm font-medium text-gray-700 mb-2">
+                            Describe your band's style, influences, or vibe:
+                        </label>
+                        <textarea 
+                            id="band-description"
+                            name="description" 
+                            rows="4" 
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                            placeholder="e.g., We're an indie rock band with folk influences, inspired by The National and Bon Iver. We write introspective lyrics about city life..."
+                            required
+                        ></textarea>
+                    </div>
+                    <button 
+                        type="submit" 
+                        class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-200"
+                    >
+                        Generate Band Names
+                    </button>
+                </form>
+
+                <div id="band-loading" class="htmx-indicator mt-4">
+                    <div class="flex items-center justify-center">
+                        <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+                        <span class="ml-2 text-gray-600">Generating creative names...</span>
+                    </div>
+                </div>
+
+                <div id="band-results" class="mt-6"></div>
+            </div>
+
+            <!-- Venue Finder -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">🏛️ Find NYC Venues</h2>
+                <p class="text-gray-600 mb-6">Tell us about your band and we'll recommend perfect NYC venues for you!</p>
+                
+                <form hx-post="/venues/htmx" hx-target="#venue-results" hx-indicator="#venue-loading" class="space-y-4">
+                    <div>
+                        <label for="band-style" class="block text-sm font-medium text-gray-700 mb-2">
+                            Band Style/Genre:
+                        </label>
+                        <input 
+                            type="text" 
+                            id="band-style"
+                            name="band_style" 
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                            placeholder="e.g., indie rock, folk, electronic, punk"
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label for="expected-audience" class="block text-sm font-medium text-gray-700 mb-2">
+                            Expected Audience Size:
+                        </label>
+                        <input 
+                            type="number" 
+                            id="expected-audience"
+                            name="expected_audience" 
+                            min="10" 
+                            max="1000" 
+                            value="50"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                        />
+                    </div>
+                    <button 
+                        type="submit" 
+                        class="w-full bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition duration-200"
+                    >
+                        Find Venues
+                    </button>
+                </form>
+
+                <div id="venue-loading" class="htmx-indicator mt-4">
+                    <div class="flex items-center justify-center">
+                        <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-green-600"></div>
+                        <span class="ml-2 text-gray-600">Finding perfect venues...</span>
+                    </div>
+                </div>
+
+                <div id="venue-results" class="mt-6"></div>
+            </div>
+        </div>
+
+        <footer class="text-center mt-12 text-gray-500">
+            <p>BandBot - Helping NYC musicians find their sound and their stage 🎤</p>
+        </footer>
+    </div>
+
+    <script>
+        document.body.addEventListener('htmx:responseError', function(evt) {
+            const targetId = evt.detail.target.id;
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mt-4';
+            errorDiv.innerHTML = '<strong>Error:</strong> Something went wrong. Please try again.';
+            document.getElementById(targetId).innerHTML = '';
+            document.getElementById(targetId).appendChild(errorDiv);
+        });
+    </script>
+</body>
+</html>
